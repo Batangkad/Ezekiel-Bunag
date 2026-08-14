@@ -126,7 +126,7 @@ GPIO.setup(EndRound_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 os.environ["QT_QPA_PLATFORM"] = "offscreen"
 
-#####GEOGHEGAN CODE START
+##### CODE START
 cams = [0, 1, 2]
 current_cam = 0
 
@@ -238,7 +238,7 @@ def roundLoop():
 
    
 		break
-#########END OF GEOGHEGAN CODE
+#########END OF CODE
 GPIO.add_event_detect(Reset_PIN, GPIO.FALLING, callback=reset_handler, bouncetime = 200)
 
 display_digits = "00000000"  # Default to all zeros
